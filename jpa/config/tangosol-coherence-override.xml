@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coherence xmlns="http://xmlns.oracle.com/coherence/coherence-operational-config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/coherence/coherence-operational-config http://xmlns.oracle.com/coherence/coherence-operational-config/1.2/coherence-operational-config.xsd">
+    <!--coherence-version:12.1.3-->
+   <cluster-config>
+      <member-identity>
+         <cluster-name>jyokosaw_cluster_hello_example</cluster-name>
+      </member-identity>
+  
+      <multicast-listener>
+         <address>224.3.6.0</address>
+         <port>7494</port>
+         <time-to-live>10</time-to-live>
+      </multicast-listener>
+<!--
+      <service-guardian>
+         <timeout-milliseconds>1000</timeout-milliseconds>
+      </service-guardian>
+-->
+   </cluster-config>
+  
+   <configurable-cache-factory-config>
+      <init-params>
+         <init-param>
+            <param-type>java.lang.String</param-type>
+            <param-value system-property="tangosol.coherence.cacheconfig">jpa-cache-config.xml</param-value>
+         </init-param>
+      </init-params>
+   </configurable-cache-factory-config>
+</coherence>

@@ -9,6 +9,7 @@
 
 	<target name="init">
 		<mkdir dir="${classes.dir}"/>
+		<mkdir dir="${basedir}/../logs"/>
 	</target>
 
 	<target name="clean">

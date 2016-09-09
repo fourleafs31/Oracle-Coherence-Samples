@@ -1,8 +1,9 @@
 #!/bin/sh
-export COHERENCE_HOME=/home/jyokosaw/Applications/x86_64/Oracle/Middleware/coherence12.1.3/coherence
-export JAVA_HOME=/home/jyokosaw/Applications/x86_64/HotSpotVM/jdk1.8.0_66
-
-export ANT_HOME=/home/jyokosaw/Applications/JavaApp/apache-ant-1.9.6
+export COHERENCE_HOME={Enter coherence home}
+export JAVA_HOME={Entery JDK Home}
+export ANT_HOME={Enter Apache ANT Home}
 export PATH=${ANT_HOME}/bin:${PATH}
-
-export BASEDIR=/home/jyokosaw/Work/cohe/examples/v12.1.3.0.0/helloExample
+export BASEDIR={Enter Test Dir}
+export ORACLE_HOME="{Enter Oracle Home of Coherence}"
+# Sample: "/OraJdbcDriver/12cR1/ojdbc7.jar"
+export ORA_JDBC={Enter Oracle DB's JDBC Driver}

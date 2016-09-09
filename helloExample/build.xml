@@ -16,7 +16,7 @@
 	</target>
 
 	<target name="compile" depends="init">
-		<javac srcdir="${src}" includes="*.java" destdir="${classes.dir}" classpath="${cohe.home}/lib/coherence.jar"/>
+		<javac srcdir="${src}" includes="*.java" destdir="${classes.dir}" classpath="${cohe.home}/lib/coherence.jar" debug="true"/>
 	</target>
 
 </project>

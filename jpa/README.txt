@@ -33,6 +33,10 @@ $ ant
 
 * How to run.
 
+0. Create ./logs directory:
+
+$ mkdir logs
+
 1. Simple App: 
 
 $ ./RunEmployee.sh
